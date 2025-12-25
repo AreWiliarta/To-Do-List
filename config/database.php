@@ -3,7 +3,7 @@
 
 $hostname = "localhost";
 $username = "root";
-$password = "Wiliarta36#"; // Kosongkan jika pakai XAMPP default
+$password = "dodol123"; // Kosongkan jika pakai XAMPP default
 $database = "todolist";
 
 $conn = mysqli_connect($hostname, $username, $password, $database);
