@@ -1,0 +1,306 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+table th {
+    background-color: #f8f9fa;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.btn-add {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-logout {
+    background-color: #e74c3c;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.status-done {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* Status Badges */
+.status-done {
+    color: green;
+    font-weight: bold;
+}
+.status-pending {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Pastikan ini ada di file assets/css/style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Membuat background halaman dan posisi box di tengah */
+body.login-page {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Box Putih Utama */
+.auth-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-box h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.auth-box p {
+    color: #777;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Form Input */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Tombol */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.auth-footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background Full Layar */
+body.login-page {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kotak Form */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.auth-box h2 {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.auth-box p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Input Group */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Tombol */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Link */
+.auth-footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styling tambahan untuk dropdown select */
+.form-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+    appearance: none; /* Menghilangkan panah default browser */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: #007bff;
+}

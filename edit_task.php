@@ -39,23 +39,41 @@ if (isset($_POST['update'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Edit Tugas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Tugas - Todo List</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <h2>Edit Tugas</h2>
-    <form method="POST" action="">
-        <input type="text" name="task_name" value="<?= $data['task_name']; ?>" required><br><br>
-        
-        <label>Status:</label>
-        <select name="status">
-            <option value="pending" <?= $data['status'] == 'pending' ? 'selected' : ''; ?>>Belum Selesai</option>
-            <option value="completed" <?= $data['status'] == 'completed' ? 'selected' : ''; ?>>Selesai</option>
-        </select><br><br>
+<body class="login-page">
 
-        <button type="submit" name="update">Update</button>
-        <a href="index.php">Batal</a>
-    </form>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Edit Tugas</h2>
+            <p>Perbarui detail tugas Anda</p>
+
+            <form method="POST" action="">
+                <div class="form-group">
+                    <label>Nama Tugas</label>
+                    <input type="text" name="task_name" value="<?= htmlspecialchars($data['task_name']); ?>" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Status Tugas</label>
+                    <select name="status" class="form-select">
+                        <option value="pending" <?= $data['status'] == 'pending' ? 'selected' : ''; ?>>Belum Selesai</option>
+                        <option value="completed" <?= $data['status'] == 'completed' ? 'selected' : ''; ?>>Selesai</option>
+                    </select>
+                </div>
+
+                <button type="submit" name="update" class="btn-primary">Update Tugas</button>
+                
+                <div class="auth-footer">
+                    <a href="index.php" style="color: #666;">Batal dan Kembali</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

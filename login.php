@@ -39,21 +39,31 @@ if (isset($_POST['login'])) {
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Login - Todo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - To Do List</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <h2>Login Aplikasi</h2>
-    <?php if(isset($error)) { echo "<p style='color:red;'>$error</p>"; } ?>
-    
-    <form action="" method="POST">
-        <label>Username:</label><br>
-        <input type="text" name="username" required><br><br>
-        
-        <label>Password:</label><br>
-        <input type="password" name="password" required><br><br>
-        
-        <button type="submit" name="login">Masuk</button>
-    </form>
-    <p>Belum punya akun? <a href="register.php">Daftar disini</a></p>
+<body class="login-page"> <div class="auth-container">
+        <div class="auth-box">
+            <h2>Login</h2>
+            <p>Silakan masuk untuk mengelola tugas Anda</p>
+            
+            <form method="POST" action="">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Masukkan username" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Masukkan password" required>
+                </div>
+                <button type="submit" name="login" class="btn-primary">Masuk Sekarang</button>
+            </form>
+            
+            <p class="auth-footer">
+                Belum punya akun? <a href="register.php">Daftar di sini</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>

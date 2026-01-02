@@ -28,17 +28,22 @@ if (isset($_POST['submit'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Tugas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h2>Tambah Tugas Baru</h2>
-    <form method="POST" action="">
-        <input type="text" name="task_name" placeholder="Tulis tugas anda..." required>
-        <button type="submit" name="submit">Simpan Tugas</button>
-    </form>
-    <br>
-    <a href="index.php">Kembali</a>
+    <div class="container"> <h2>Tambah Tugas Baru</h2>
+        <form method="POST" action="">
+            <div class="form-group">
+                <input type="text" name="task_name" placeholder="Tulis tugas anda..." required>
+            </div>
+            <button type="submit" name="submit" class="btn-add">Simpan Tugas</button>
+            <a href="index.php" class="btn-logout" style="background: gray;">Batal</a>
+        </form>
+    </div>
 </body>
 </html>
